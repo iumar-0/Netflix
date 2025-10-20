@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    transition: background-color 0.6s linear, color 0.6s ease;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+:root {
+    /* global or repeatable */
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --third-text-color-type-greyish: #cac9c9;
+    --placeholder-text-color: "";
+
+    --background-color-primary: black;
+    --background-color-max-width: rgb(2, 4, 36);
+
+    /* custom colors properties */
+    --movie-numbers-h: rgb(222, 222, 222);
+    --movie-number-h-webkit: rgb(0, 0, 0);
+
+
+    --bg-image-background-open-nav: linear-gradient(to top, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+        linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    --bg-image-background: linear-gradient(to top, rgba(0, 0, 0, 1)10%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
+        linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
+        url(../scr/images/bg.jpg) no-repeat center center;
+
+    --posterImage: url(/scr/images/sexlife.webp);
+}
+
+.dark-mode {
+    /* global or repeatable */
+    --primary-text-color: black;
+    --secondary-text-color: white;
+    --third-text-color-type-greyish: #101010;
+    --placeholder-text-color: rgba(0, 0, 0, 0.765);
+    --background-color-primary: white;
+    --background-color-max-width: white;
+
+    /* custom colors properties */
+    --movie-numbers-h: rgb(0, 0, 0);
+    --movie-number-h-webkit: rgb(222, 222, 222);
+
+
+
+
+    --bg-image-background-open-nav: linear-gradient(to top, rgba(255, 255, 255, 1)10%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+    --bg-image-background: linear-gradient(to top, rgba(255, 255, 255, 1)10%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+        linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)),
+        url(../scr/images/bg.jpg) no-repeat center center;
+
+    --posterImage: url(/scr/images/sexlife.webp);
+}
+
+@media (max-width:200px) {
+    body {
+        overflow-x: scroll;
+    }
+}
+
+/* For open navigation 
+
+\\ if hidden webiste stops working //
+*/

@@ -1,0 +1,157 @@
+/* hero text */
+.color {
+    color: var(--primary-text-color);
+}
+
+.hero {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80%;
+}
+
+.hero-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+
+/*  Main Heading */
+.main-heading {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.hero-text {
+    font-size: clamp(30px, 5vw, 90px);
+    text-align: center;
+    font-weight: 799;
+
+}
+
+.price {
+    margin-bottom: 20px;
+}
+
+
+.price-text {
+    font-size: clamp(16px, 1.4vw, 22px);
+    text-align: center;
+    color: var(--primary-text-color);
+}
+
+.para-text {
+    font-size: clamp(14px, 1.25vw, 16px);
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: wrap;
+    color: var(--third-text-color-type-greyish)
+}
+
+/* Email and button */
+
+.email-and-button {
+    margin-top: 15px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media (max-width:720px) {
+    .email-and-button {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .input-div {
+        margin-bottom: 12px;
+    }
+
+    .main-heading {
+        width: 90%;
+    }
+}
+
+.input-div {
+    margin-right: 10px;
+    width: 100%;
+    height: 56px;
+}
+
+.input {
+    background-color: rgba(0, 0, 0, 0.438);
+    padding: 10px;
+    border-radius: 7px;
+    border-color: rgba(255, 255, 255, 0.37);
+    border-width: 1.5px;
+    height: 100%;
+    width: 100%;
+    color: var(--third-text-color-type-greyish);
+    font-size: large;
+}
+
+.input::placeholder {
+    padding: 10px 0px 10px 0px;
+    font-size: large;
+    color: var(--placeholder-text-color);
+}
+
+
+
+.input::selection {
+    border-color: red;
+}
+
+.button-from-email-div {
+    height: 56px;
+    width: clamp(160px, 12vw, 170px)
+}
+
+.email-button {
+    border-radius: 8px;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(218, 5, 5);
+    border: none;
+    color: #fff;
+    font-size: clamp(16px, 1.3vw, 17px);
+    font-weight: bold;
+}
+
+.email-button:hover {
+    background-color: rgb(192, 4, 4);
+}
+
+
+
+
+@media (max-width:300px) {
+    .button-from-email-div {
+        height: 40px;
+        width: 130px;
+    }
+
+    .email-button {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:152px) {
+    .para-text {
+        display: none;
+    }
+}

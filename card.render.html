@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Movie Poster</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .sign-in-button {
+            border-radius: 8px;
+            height: 50px;
+            width: 150px;
+            background-color: rgb(218, 5, 5);
+            border: none;
+            color: #fff;
+            font-size: clamp(16px, 1.3vw, 17px);
+            font-weight: bold;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .sign-in-button:hover {
+            background-color: rgb(192, 4, 4);
+        }
+
+        .transparent-moviePoster-div {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.877);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .card-moviePoster-div {
+            border-radius: 10px;
+            border: 0.8px solid white;
+            height: auto;
+            max-height: 90vh;
+            width: clamp(250px, 90%, 667px);
+            overflow-y: auto;
+            transition: box-shadow 0.3s ease;
+            background: #161616;
+        }
+
+        .card-moviePoster-div:hover {
+            box-shadow: 0px 0px 50px rgba(151, 22, 22, 0.678);
+        }
+
+        .start-overall-div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            width: 100%;
+        }
+
+        .poster-image-div {
+            background: linear-gradient(40deg, rgb(22, 22, 22) 24.16%, rgba(6, 10, 23, 0) 56.61%),
+                linear-gradient(0deg, rgb(22, 22, 22) 3.91%, rgba(6, 10, 23, 0) 69.26%),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.573) 1%, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+                url(/scr/images/sexlife.webp);
+            border-radius: 10px 10px 0 0;
+            width: 100%;
+            min-height: 200px;
+            aspect-ratio: 16/9;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .close-button-movieposter {
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 5%;
+            right: 3%
+        }
+
+        .logo-poster-image {
+            position: absolute;
+            bottom: 5%;
+            left: 8%;
+            width: clamp(150px, 47%, 300px);
+            max-width: 100%;
+            height: auto;
+        }
+
+        .poster-image-data-div {
+            background-color: #161616;
+            padding: clamp(15px, 3vw, 20px) clamp(15px, 4vw, 40px);
+            border-radius: 0 0 10px 10px;
+        }
+
+        .tags-div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .year,
+        .Age-group,
+        .geners {
+            background-color: rgba(128, 128, 128, 0.63);
+            padding: 4px 8px;
+            border-radius: 3px;
+            color: white;
+            font-size: clamp(12px, 1.5vw, 16px);
+            white-space: nowrap;
+        }
+
+        .poster-image-des-div {
+            margin-top: clamp(15px, 3vw, 25px);
+        }
+
+        .poster-image-des-span {
+            color: white;
+            font-size: clamp(14px, 1.5vw, 18px);
+            line-height: 1.5;
+        }
+
+        .button-div {
+            margin-top: clamp(15px, 3vw, 25px);
+            display: flex;
+            justify-content: start1;
+        }
+
+        .geners-div {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        /* Responsive adjustments */
+        @media (max-height: 620px) {
+            .card-moviePoster-div {
+                max-height: 95vh;
+            }
+
+            .poster-image-div {
+                min-height: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .transparent-moviePoster-div {
+                padding: 10px;
+            }
+
+            .logo-poster-image {
+                bottom: 3%;
+                left: 5%;
+            }
+
+            .sign-in-button {
+                width: 100%;
+                max-width: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-moviePoster-div {
+                max-height: 95vh;
+                width: 95%;
+            }
+
+            .poster-image-div {
+                aspect-ratio: 16/10;
+            }
+
+            .logo-poster-image {
+                width: 60%;
+                bottom: 2%;
+            }
+
+            .tags-div {
+                gap: 5px;
+            }
+
+            .poster-image-des-span {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .year,
+            .Age-group,
+            .geners {
+                font-size: 11px;
+                padding: 3px 6px;
+            }
+
+            .poster-image-des-span {
+                font-size: 13px;
+            }
+
+            .sign-in-button {
+                height: 45px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="transparent-moviePoster-div">
+        <div class="card-moviePoster-div">
+            <div class="start-overall-div">
+                <div class="poster-image-div">
+                    <div class="close-button-movieposter">
+                        <svg height="512px" fill="white" id="Layer_1"
+                            style="enable-background:new 0 0 512 512; width: 100%; height: 100%;" version="1.1"
+                            viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <path
+                                d="M437.5,386.6L306.9,256l130.6-130.6c14.1-14.1,14.1-36.8,0-50.9c-14.1-14.1-36.8-14.1-50.9,0L256,205.1L125.4,74.5  c-14.1-14.1-36.8-14.1-50.9,0c-14.1,14.1-14.1,36.8,0,50.9L205.1,256L74.5,386.6c-14.1,14.1-14.1,36.8,0,50.9  c14.1,14.1,36.8,14.1,50.9,0L256,306.9l130.6,130.6c14.1,14.1,36.8,14.1,50.9,0C451.5,423.4,451.5,400.6,437.5,386.6z" />
+                        </svg>
+                    </div>
+                    <img src="/scr/logo/AAAABUAJPJHZ3EDzkFpq1SJZ3p6udZ6yTPxG2PzGsRsTh_UAJjJ1FDSWTh4hOumhxgDtWvWWDlwvmfjIpprd1G6mtE0GY6H2KRW4qQ.webp"
+                        alt="Netflix Original" class="logo-poster-image">
+                </div>
+
+                <div class="poster-image-data-div">
+                    <div class="tags-div">
+                        <span class="year">2021</span>
+                        <span class="Age-group year">18+</span>
+                        <div class="geners-div">
+                            <span class="geners year">Show</span>
+                            <span class="geners year">Thriller</span>
+                            <span class="geners year">Drama</span>
+                        </div>
+                    </div>
+
+                    <div class="poster-image-des-div">
+                        <span class="poster-image-des-span">
+                            Eight thieves take hostages and lock themselves in the Royal Mint of Spain as a criminal
+                            mastermind manipulates the police to carry out his plan. A high-stakes thriller with
+                            unexpected twists.
+                        </span>
+                    </div>
+                    <div class="button-div">
+                        <button class="sign-in-button">Get Started ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

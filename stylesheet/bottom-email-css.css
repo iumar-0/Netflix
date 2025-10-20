@@ -1,0 +1,68 @@
+.sign-in-form {
+    margin: 40px;
+    width: 100%;
+}
+
+.email-and-button-bottom {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: row;
+}
+
+.email-div-bottom {
+    width: 60%;
+    margin-bottom: 25px;
+}
+
+.questions-and-contact-us span a {
+    color: var(--primary-text-color);
+}
+
+.all-links-div-parent {
+    margin: 25px;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+
+}
+
+.all-links-div-child {
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+}
+
+.all-links-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.link-netflix {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+    margin: clamp(17px, 5%, 15px);
+}
+
+@media (max-width:960px) {
+    .all-links-div-child {
+        width: 50%;
+    }
+}
+
+@media (max-width:720px) {
+    .email-and-button-bottom {
+        flex-direction: column;
+    }
+
+    .email-div-bottom {
+        width: 100%;
+    }
+}
+
+@media (max-width:620px) {
+    .all-links-div-child {
+        width: 100%;
+    }
+}

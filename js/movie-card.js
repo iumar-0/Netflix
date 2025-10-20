@@ -8,7 +8,7 @@ movie_rander_details = [
         genres: ["Action", "Thriller"],
         description: "A high-octane action thriller filled with twists and turns.",
         posterImage: "../scr/images/1.webp",
-        heroImage: "../scr/images/moneyhesit.webp"
+        heroImage: "scr/images/moneyhesit.webp"
 
 
     },
@@ -20,7 +20,7 @@ movie_rander_details = [
         genres: ["Drama", "Mystery"],
         description: "An emotionally charged drama unraveling a deep mystery.",
         posterImage: "../scr/images/2.webp",
-        heroImage: "../scr/images/mundala.webp"
+        heroImage: "scr/images/mundala.webp"
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ movie_rander_details = [
         genres: ["Sci-Fi", "Adventure"],
         description: "A futuristic adventure beyond imagination and limits.",
         posterImage: "../scr/images/10.webp",
-        heroImage: "../scr/images/oldguard.webp"
+        heroImage: "scr/images/oldguard.webp"
     },
     {
         id: 4,
@@ -40,7 +40,7 @@ movie_rander_details = [
         genres: ["Comedy", "Family"],
         description: "A lighthearted family comedy packed with fun and laughter.",
         posterImage: "../scr/images/4.webp",
-        heroImage: "../scr/images/squidgame.webp"
+        heroImage: "scr/images/squidgame.webp"
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ movie_rander_details = [
         genres: ["Romance", "Drama"],
         description: "A passionate love story that tests the boundaries of fate.",
         posterImage: "../scr/images/11.webp",
-        heroImage: "../scr/images/sikarnadar.webp"
+        heroImage: "scr/images/sikarnadar.webp"
     },
     {
         id: 6,
@@ -60,7 +60,7 @@ movie_rander_details = [
         genres: ["Horror", "Thriller"],
         description: "A chilling horror story that will keep you on edge.",
         posterImage: "../scr/images/6.webp",
-        heroImage: "../scr/images/raid2.webp"
+        heroImage: "scr/images/raid2.webp"
     },
     {
         id: 7,
@@ -70,7 +70,7 @@ movie_rander_details = [
         genres: ["Documentary"],
         description: "A thought-provoking documentary revealing untold truths.",
         posterImage: "../scr/images/7.webp",
-        heroImage: "../scr/images/kapil.webp"
+        heroImage: "scr/images/kapil.webp"
     },
     {
         id: 8,
@@ -80,7 +80,7 @@ movie_rander_details = [
         genres: ["Fantasy", "Adventure"],
         description: "An enchanting tale set in a world of fantasy and wonder.",
         posterImage: "../scr/images/8.webp",
-        heroImage: "../scr/images/sexlife.webp"
+        heroImage: "scr/images/sexlife.webp"
     },
     {
         id: 9,
@@ -90,7 +90,7 @@ movie_rander_details = [
         genres: ["Crime", "Thriller"],
         description: "A gripping crime thriller that delves into the underworld.",
         posterImage: "../scr/images/9.webp",
-        heroImage: "../scr/images/royals.webp"
+        heroImage: "scr/images/royals.webp"
     }
 ];
 

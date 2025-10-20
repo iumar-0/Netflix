@@ -33,7 +33,7 @@ body {
         linear-gradient(to left, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6)),
         url(../scr/images/bg.jpg) no-repeat center center;
 
-    --posterImage: url(/scr/images/sexlife.webp);
+    --posterImage: url(../scr/images/sexlife.webp);
 }
 
 .dark-mode {
@@ -58,7 +58,7 @@ body {
         linear-gradient(to left, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6)),
         url(../scr/images/bg.jpg) no-repeat center center;
 
-    --posterImage: url(/scr/images/sexlife.webp);
+    --posterImage: url(../scr/images/sexlife.webp);
 }
 
 @media (max-width:200px) {

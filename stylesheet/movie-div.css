@@ -36,6 +36,7 @@
     padding: 25px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    cursor: pointer;
 
 }
 
@@ -70,7 +71,7 @@
     font-size: 100px;
     -webkit-text-stroke-width: 1.7px;
     -webkit-text-fill-color: var(--movie-number-h-webkit)
-    /* -webkit-text-stroke: 0; */
+        /* -webkit-text-stroke: 0; */
 }
 
 
